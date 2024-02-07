@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/Javascript" src="demo1.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="onLoad()">
+    <p id="welcomeText"></p>
+    <h1 id="heading">Decoration Cost calculation</h1>
+    <div class="container">
+        Name <input type="text" id="name"><br>
+        PhoneNumber <input type="text" id="phoneNumber"><br>
+        Address <input type="text" id="address"><br>
+        Wedding Type <select name="" id="types">
+            <option value="Simple">Simple</option>
+            <option value="Grand">Grand</option>
+        </select><br>
+        Do you want Extra flower Decoration?
+        <select name="" id="need">
+            <option value="yes">Yes</option>
+            <option value="no">No</option   >
+        </select>
+        <br><Button onclick="getValues()" >calculate the Charge</Button>
+    </div>
+    <div id="result">
+
+    </div>
+</body>
+</html>
