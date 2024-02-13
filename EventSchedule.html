@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Event Schedule</title>
+    <link rel="stylesheet" href="ES.css">
+    <script type="text/Javascript" src="ES.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family: sans-serif;">Event Schedule</h1>
+        <label for="">Event Name:</label><input type="text" id="EventName"><br><br>
+        <label for="">Event Date:</label><input type="date" id="EventDate"><br><br>
+        <button onclick="addEvent()">Add Event</button>
+        <button onclick="DisplayEvent()">Display Event</button><br><br>
+        <p id="msgBox"></p><br><br><br>
+
+        <table id="resultTable" border="1px solid Black">
+
+        </table>
+    </div>
+    <div>
+        <button onclick="merge()">
+            Merge the Array
+        </button>
+    </div>
+
+    <div class="EventSort">
+        <h1>Event Schedule Sort</h1>
+        Event Name : <input type="text" id="eName"><br><br>    
+        Event Venue : <input type="text" id="eVenue"><br><br>
+        Event Date : <input type="date" id="eDate"><br><br>
+        Event Cost : <input type="text" id="eCost"><br><br><br>
+        <button onclick="createEvent1()">Add Event</button>
+        <button onclick="displayEvent()">Display Event</button>
+        <button>Sort</button><br><br><br>
+        <table id="eTable" border="3px solid Orange" style="margin-left: 32%;">
+
+        </table>
+    </div>
+    
+</body>
+</html>

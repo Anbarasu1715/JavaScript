@@ -9,7 +9,7 @@
 </head>
 <body onload="onLoad()">
     <p id="welcomeText"></p>
-    <h1 id="heading">Decoration Cost calculation</h1>
+    <h1 id="heading" style="text-align: center;">Decoration Cost calculation</h1>
     <div class="container">
         Name <input type="text" id="name"><br>
         PhoneNumber <input type="text" id="phoneNumber"><br>
@@ -24,9 +24,20 @@
             <option value="no">No</option   >
         </select>
         <br><Button onclick="getValues()" >calculate the Charge</Button>
-    </div>
-    <div id="result">
+        
+        <div id="result">
+        
+        </div>
 
     </div>
+    <div>
+        <h1 style="text-align: center;">String to Bytes</h1>
+        <div style="width: 300px; height: 100px; border: 1px solid orange;margin-left: 37%;">
+            Enter the String: <input type="text" id="stringValue">
+            <Button onclick="convertToByte()">Enter</Button>
+            <p id="ByteResult"></p>
+        </div>
+    </div>
+
 </body>
 </html>
